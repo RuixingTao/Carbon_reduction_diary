@@ -1,0 +1,61 @@
+/* pages/detailFood/detailFood.wxss */
+page {
+  background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/page_head_bg%402x.png) no-repeat #f6f6fc;
+  background-size: 100%;
+}
+
+.title-image{
+  border-radius: 32rpx;
+  width:100%;
+  height:472rpx;
+  
+}
+.title-image image{
+  border-radius: 32rpx;
+  width:100%;
+  height:100%;
+}
+.detail-container{
+    background: #ffffff;
+    text-align:center;
+    color:#7E5E48;
+}
+.title-text{
+  font-size:18pt;
+  font-weight: bold;
+  padding:25rpx 10rpx;
+  
+  border-top:1px solid #969696;
+  border-bottom:1px solid #969696;
+
+}
+.author {
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30rpx 0;
+  width: 300;
+}
+
+.container .author,.article .author .info {
+  display: flex;
+}
+
+.container .author .info .user {
+  margin-left: 0rpx;
+}
+
+.author .info .user .f12 {
+  color: #999;
+  
+}
+
+/**菜单说明**/
+.food-text{
+  margin-bottom:70rpx;
+   line-height: 180%;
+   text-align:justify;
+   text-indent:2em;
+     /* text-align-last:justify; */
+}
+

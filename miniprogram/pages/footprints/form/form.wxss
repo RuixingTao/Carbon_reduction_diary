@@ -1,0 +1,133 @@
+page {
+  background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/page_head_bg%402x.png) no-repeat #f6f6fc;
+  background-size: 100%;
+  padding-bottom: calc(var(--safe-bottom) + 150rpx);
+}
+
+.head-title {
+  margin: 0 auto;
+  width: 642rpx;
+}
+
+.head-title image {
+  display: block;
+  height: 144rpx;
+  margin: 26rpx auto;
+  width: 642rpx;
+}
+
+.head-meeting {
+  margin: 0 auto;
+  width: 606rpx;
+}
+
+.head-meeting image {
+  display: block;
+  height: 186rpx;
+  margin: 26rpx auto;
+  width: 606rpx;
+}
+
+.list {
+  height: 1020rpx;
+  padding: 60rpx 72rpx 28rpx 28rpx;
+}
+
+.list .item {
+  align-items: center;
+  display: flex;
+  margin-bottom: 40rpx;
+}
+
+.list .item .type {
+  margin-right: 24rpx;
+  text-align: center;
+  width: 130rpx;
+}
+
+.list .item .type image {
+  height: 72rpx;
+  margin-bottom: 8rpx;
+  width: 72rpx;
+}
+
+.list .item .input {
+  align-items: center;
+  background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/footmark/%E8%BE%93%E5%85%A5%E6%A1%86-%E8%AE%A1%E7%AE%97%402x.png) no-repeat;
+  background-size: 100%;
+  display: flex;
+  height: 100rpx;
+  padding-left: 20rpx;
+  width: 496rpx;
+}
+
+.list .item .input input {
+  width: 370rpx;
+}
+
+.list .item .input .bold {
+  color: #97acc6;
+}
+
+.list .item .input view {
+  color: #bdc5cf;
+  flex: 1;
+  text-align: center;
+}
+
+.meeting-room {
+  padding: 28rpx 40rpx 0 28rpx;
+}
+
+.meeting-room text {
+  color: #029767;
+}
+
+.footer-btn {
+  align-items: center;
+  bottom: calc(var(--safe-bottom) + 30rpx);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 72rpx 0;
+  position: relative;
+  width: 750rpx;
+  height: 15%;
+  z-index: 10;
+}
+
+.footer-btn .button {
+  border: none;
+  border-radius: 24rpx;
+  line-height: 90rpx;
+  text-align: center;
+  width: 272rpx;
+}
+
+.footer-btn .button:first-of-type {
+  background: #e2f0f9;
+  color: #8ea2af;
+}
+
+.footer-btn .button:last-of-type {
+  background: #029767;
+  color: #fff;
+}
+
+.footer-txt {
+  background: #f6f6fc;
+  bottom: calc(var(--safe-bottom));
+  box-shadow: 0 -2rpx 4rpx 0rpx #eaeaff;
+  color: #029767;
+  line-height: 90rpx;
+  position: fixed;
+  text-align: center;
+  width: 750rpx;
+  z-index: 10;
+}
+
+.left-icon {
+  height: 68rpx;
+  margin: 20rpx 0 0 30rpx;
+  width: 68rpx;
+  z-index: 1;
+}

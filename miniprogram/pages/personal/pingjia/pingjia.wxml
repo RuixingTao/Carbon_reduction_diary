@@ -1,0 +1,64 @@
+<view class="head" >
+    <text class="font1">星级评分</text>
+    <text class="font2">*请给予我们您最宝贵的评价,以便我们后续的优化,可以反复更改评分点击提交，每日只能评价一次哦，退出后当日不可再评价~</text>
+</view>
+<view class="head" >
+    <text class="font0">"减碳日记"当前评分</text>
+    <text class="fontF">{{avg}}</text>
+    <text class="font0">当前评分人数</text>
+    <text class="fontF">{{pingjiaSum}}</text>
+</view>
+
+ 
+<view class="star">
+    
+    <star class="star-img" setSize='100' bind:myevent="setStarNum" ></star>
+    
+</view>
+<view class="critical">
+    <view class="biaoqing" wx:if="{{starNum == 0.5}}" >
+        <image class="image" src="../../../images/icon/0.5.png"></image>
+    </view>
+    <view class="biaoqing" wx:if="{{starNum == 1}}" >
+        <image class="image" src="../../../images/icon/1.png"></image>
+    </view>
+    <view class="biaoqing" wx:if="{{starNum == 1.5}}" >
+        <image class="image" src="../../../images/icon/1.5.png"></image>
+    </view>
+    <view class="biaoqing" wx:if="{{starNum == 2}}" >
+        <image class="image" src="../../../images/icon/2.png"></image>
+    </view>
+    <view class="biaoqing" wx:if="{{starNum == 2.5}}" >
+        <image class="image" src="../../../images/icon/2.5.png"></image>
+    </view>
+    <view class="biaoqing" wx:if="{{starNum == 3}}" >
+        <image class="image" src="../../../images/icon/3.png"></image>
+    </view>
+    <view class="biaoqing" wx:if="{{starNum == 3.5}}" >
+        <image class="image" src="../../../images/icon/3.5.png"></image>
+    </view>
+    <view class="biaoqing" wx:if="{{starNum == 4}}" >
+        <image class="image" src="../../../images/icon/4.png"></image>
+    </view>
+    <view class="biaoqing" wx:if="{{starNum == 4.5}}" >
+        <image class="image" src="../../../images/icon/4.5.png"></image>
+    </view>
+    <view class="biaoqing" wx:if="{{starNum == 5}}" >
+        <image class="image" src="../../../images/icon/5.png"></image>
+    </view>
+    <text wx:if="{{starNum == 0.5}}">很差劲的！</text>
+    <view wx:if="{{starNum == 1}}" >有点差劲呀！</view>
+    <view wx:if="{{starNum == 1.5}}" >不大行哦~</view>
+    <view wx:if="{{starNum == 2}}" >有很大进步空间呢！</view>
+    <view wx:if="{{starNum == 2.5}}" >勉强合格~</view>
+    <view wx:if="{{starNum == 3}}" >一般水平啦~</view>
+    <view wx:if="{{starNum == 3.5}}" >还可以哦~</view>
+    <view wx:if="{{starNum == 4}}" >有点东西~</view>
+    <view wx:if="{{starNum == 4.5}}" >做的不错！</view>
+    <view wx:if="{{starNum == 5}}" >完美~</view>
+</view>
+<view type='button' class="button">
+    <button type="button" class="btn" bindtap="setScore">
+        <text>提交</text>
+    </button>
+</view>

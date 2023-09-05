@@ -1,0 +1,23 @@
+
+<wxs module="numberUtil" src="../../../utils/util.wxs"></wxs>
+<navBar background="rgba(255,255,255,0)" extClass="custom-nav-bar">
+    <view slot="left">
+        <navigator hoverClass="none" openType="navigateBack">
+            <image class="left-icon" src="http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/back_btn%402x.png"></image>
+        </navigator>
+    </view>
+</navBar>
+<view class="head-title">
+    <view class="f14">今日减碳量</view>
+    <image src="http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/%E8%AE%A1%E7%AE%97%E7%BB%93%E6%9E%9C%402x.png"></image>
+</view>
+<view class="content">
+    <view class="num bold">{{numberUtil.numberFormat(todayVal)}}kg</view>
+    <view class="f16"> {{'您今年的碳足迹总共减少了'}} <text>{{numberUtil.numberFormat(val)}}kg</text> Co2排放.
+    </view>
+</view>
+<view class="footer-btn f18" style="position: fixed; left: 222rpx; top: 1034rpx">
+    <navigator hoverClass="none" openType="navigateBack">
+        <view class="button">返回</view>
+    </navigator>
+</view>

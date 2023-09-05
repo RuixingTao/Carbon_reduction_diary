@@ -1,0 +1,55 @@
+
+<!--index.wxml-->
+<import src="../templates/newsPage.wxml" />
+
+<view class="home">
+  <swiper class="swiper" indicator-dots="{{swiper.indicatorDots}}" indicator-color="{{swiper.indicatorColor}}" indicator-active-color="{{swiper.indicatorActiveColor}}"
+  autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" circular="{{swiper.s}}">
+      <block >
+        <swiper-item  wx:for="{{todayListArr}}" wx:key="index" >
+            <view bindtap="tapToDetail" hover-class="navigator-hover" data-item="{{item}}" data-id="{{item.id}}" >
+                <image style="border-radius: 16rpx;width: 746rpx; height: 300rpx; display: inline-block; box-sizing: border-box"  src="{{item.imgUrl}}" class="slide-image" mode="apsectFit"/>
+            </view>
+        </swiper-item>
+        
+      </block>
+    </swiper>
+  
+  <!--减碳资讯推荐-->
+  <view class="hot-view"  style="border-radius: 32rpx;width: 796rpx; height: 714rpx; display: block; box-sizing: border-box">
+    <view class="title">
+      <text>减碳小贴士推荐 </text>
+      <text>精选推荐减碳小贴士</text>
+    </view>
+    <scroll-view class="todayList" scroll-y="true" style="height: 592rpx; width: 724rpx; display: block; box-sizing: border-box">
+        <view class="item" wx:for="{{todayListArr}}" wx:key="index" style="width: 720rpx; height: 284rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+                <template is = 'news'  data='{{item}}'> </template>
+        </view>
+    </scroll-view>
+  </view>
+
+  <!--碳中和和低碳生活板块-->
+  <view class="hot-view">
+    <view class="tab">
+      <view bindtap="getTzhInfo">
+        <text wx:if="{{active}}" class="active" >碳中和|碳达峰</text>
+        <text wx:else>碳中和|碳达峰</text>
+      </view>
+      <view bindtap="getDtliveInfo">
+        <text wx:if="{{!active}}" class="active">低碳生活</text>
+        <text wx:else>低碳生活</text>
+      </view>
+    </view>
+    <scroll-view scroll-y="true" style="height: 562rpx; width: 724rpx; display: block; box-sizing: border-box">
+        <view class="item" wx:for="{{viewList}}" wx:key="index" >
+          <template is="news" data="{{item}}"/>
+        </view>
+    </scroll-view>
+  </view>
+  <!-- 上拉加载更多 -->
+  <view hidden="{{noMore}}">
+    <view class="loadMore" hidden="{{isLoading}}" style="width: 750rpx; height: 60rpx; display: block; box-sizing: border-box">上拉加载更多</view>
+    <view class="loadMore" hidden="{{!isLoading}}">加载中...</view>
+  </view>
+  <view class="loadMore" hidden="{{!noMore}}">没有更多数据</view>
+</view>

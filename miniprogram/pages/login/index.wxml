@@ -1,0 +1,15 @@
+<navBar background="rgba(255,255,255,0)" extClass="custom-nav-bar">
+    <view slot="left">
+        <navigator hoverClass="none" openType="navigateBack">
+            <image bind:tap="" class="left-icon" src="http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/back_btn%402x.png"></image>
+        </navigator>
+    </view>
+</navBar>
+<view class="login">
+    <view class="logo"></view>
+    <view class="txt f14">保护人类家园应对气候变化 是我们共同的责任和义务。</view>
+    
+    <view class="button">
+        <text class="iconfont f18"></text> 微信快捷登录 <button bindtap="login">111</button>
+    </view>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/detailFood/detailFood.wxml-->
+<!-- 详情 -->
+<view class="content">
+    
+
+<!-- 新闻图片 -->
+  <view class="title-image">
+    <image src="{{detail[id].imgUrl}}"></image>
+  </view>
+  
+</view>
+
+<view class="container detail-container">
+    <!-- 小贴士标题 -->
+  <text class="title-text" >{{detail[id].title}}</text>
+  <view class="author">
+            <view class="info">
+                <view class="user">
+                    <view class="f13">{{detail[id].author}}</view>
+                    <view class="f12">{{detail[id].publishDate}}</view>
+                </view>
+            </view>
+  </view>
+  <!-- 小贴士内容 -->
+  <view class="food-text">
+    {{detail[id].newsText}}
+  </view>
+</view>

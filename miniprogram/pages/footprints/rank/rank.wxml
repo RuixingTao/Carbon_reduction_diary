@@ -1,0 +1,55 @@
+<wxs module="numberUtil" src="../../../utils/util.wxs"></wxs>
+<navBar background="rgba(255,255,255,0)" extClass="custom-nav-bar">
+    <view slot="left">
+        <navigator hoverClass="none" openType="navigateBack">
+            <image bind:tap="" class="left-icon" src="http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/back_btn%402x.png"></image>
+        </navigator>
+    </view>
+</navBar>
+<image class="title" src="http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/ranking/%E6%8E%92%E8%A1%8C%E6%A6%9C%402x.png"></image>
+<view class="my" style="width: 700rpx; height: 185rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+    <view class="center">
+        <view class="head">
+            <view>我的排名</view>
+        </view>
+        <view class="item" wx:for="{{list}}" wx:key="index" wx:if="{{item._openid=== openid}}">
+            <view class="info" wx:if="{{item._openid=== openid}}">
+                <image src="{{item.user_avatarUrl}}"></image> {{item.user_name}} 
+            </view>
+            <view class="index" wx:if="{{item._openid=== openid}}">
+                {{index+1}}
+            </view>
+        
+        </view>
+        <view class="head" wx:if="{{item._openid!= openid}}">
+            <view class="info2"  style="width: 486rpx; height: 57rpx; display: block; box-sizing: border-box; position: relative; left: 107rpx; top: 0rpx">
+                暂未获取您的排名,上划以获取排名数据
+            </view>
+        </view>
+    </view>
+</view>
+<view class="list f14">
+    <view class="cneter">
+        <view class="head">
+            <view style="width: 103rpx; height: 42rpx; display: block; box-sizing: border-box; position: relative; left: 1rpx; top: 1rpx">排行</view>
+            <view>用户</view>
+            <view>减碳量(kg)</view>
+        </view>
+        <view class="item" wx:for="{{list}}" wx:key="index">
+            <view class="index" wx:if="{{index===0}}">
+                <image src="http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/ranking/金牌@2x.png"></image>
+            </view>
+            <view class="index" wx:elif="{{index===1}}">
+                <image src="http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/ranking/银牌@2x.png"></image>
+            </view>
+            <view class="index" wx:elif="{{index===2}}">
+                <image src="http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/ranking/铜牌@2x.png"></image>
+            </view>
+            <view class="index" wx:else>{{index+1}}</view>
+            <view class="info">
+                <image src="{{item.user_avatarUrl}}"></image> {{item.user_name}} </view>
+            <view class="ccer">{{numberUtil.numberFormat(item.totalRed)}}</view>
+        </view>
+        <default-page wx:if="{{!list.length}}"></default-page>
+    </view>
+</view>

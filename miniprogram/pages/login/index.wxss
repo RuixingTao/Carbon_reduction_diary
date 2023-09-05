@@ -1,0 +1,51 @@
+page {
+    background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/page_head_bg%402x.png) no-repeat #f6f6fc;
+    background-size: 100%;
+}
+
+.login {
+    padding-top: 200rpx;
+}
+
+.login .logo {
+    background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/%E5%B0%8F%E6%A0%91%E5%92%8C%E4%BA%91%E6%9C%B5%402x.png) no-repeat;
+    background-size: 100%;
+    height: 282rpx;
+    margin: 34rpx auto;
+    width: 350rpx;
+}
+
+.login .txt {
+    color: #838e9d;
+    margin: 30rpx auto 100rpx;
+    text-align: center;
+    width: 330rpx;
+}
+
+.login .button {
+    align-items: center;
+    background: #35c274;
+    border-radius: 12rpx;
+    color: rgb(253, 253, 253);
+    display: flex;
+    height: 88rpx;
+    justify-content: center;
+    line-height: 88rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 650rpx;
+}
+
+.login .button .iconfont {
+    margin-right: 18rpx;
+}
+
+.login .button button {
+    height: 88rpx;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 650rpx;
+}

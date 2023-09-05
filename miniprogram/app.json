@@ -1,0 +1,61 @@
+{
+    "pages": [
+        
+        "pages/index/index",
+        "pages/list/list",
+        "pages/footprints/footprints",
+        "pages/personal/personal",
+        "pages/index/detailInfo/info1",
+        "pages/templates/newsPage",
+        "pages/list/dt",
+        "pages/list/qd",
+        "pages/footprints/form/form",
+        "pages/results/results",
+        "pages/footprints/rank/rank",
+        "pages/login/index",  
+        "pages/personal/pingjia/pingjia",
+        "pages/footprints/calculate/calculate"
+        
+    ],
+    "usingComponents": {},
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "position": "bottom",
+        "borderStyle": "black",
+        "backgroundColor": "#9ff08f",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "碳贴士",
+                "iconPath": "/images/navbar/tzx.png",
+                "selectedIconPath": "/images/navbar/tzx_active.png"
+            },
+            {
+                "pagePath": "pages/list/list",
+                "text": "碳乐园",
+                "iconPath": "/images/navbar/tly.png",
+                "selectedIconPath": "/images/navbar/tly_active.png"
+            },
+            {
+                "pagePath": "pages/footprints/footprints",
+                "text": "碳足迹",
+                "iconPath": "/images/navbar/tzj.png",
+                "selectedIconPath": "/images/navbar/tzj_active.png"
+            },
+            {
+                "pagePath": "pages/personal/personal",
+                "text": "我的",
+                "iconPath": "/images/navbar/my.png",
+                "selectedIconPath": "/images/navbar/my_active.png"
+            }
+        ]
+    },
+    
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

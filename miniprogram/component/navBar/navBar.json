@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "navBar": "/component/navBar/navBar",
+        "default-page": "/component/default-page/index",
+        "van-popup": "../../miniprogram_npm/@vant/weapp/popup/index",
+        "van-image": "../../miniprogram_npm/@vant/weapp/image/index",
+        "van-loading": "../../miniprogram_npm/@vant/weapp/loading/index",
+        "van-action-sheet": "../../miniprogram_npm/@vant/weapp/action-sheet/index",
+        "mp-html": "../../miniprogram_npm/mp-html/index"
+    }
+}

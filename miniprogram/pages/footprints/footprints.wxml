@@ -1,0 +1,19 @@
+<view class="head-title">
+    <view class="bold">碳排放记录</view>
+    <view class="f12">保护人类家园应对气候变化是我们共同的责任和义务~</view>
+</view>
+<navigator hoverClass="none" url="../footprints/rank/rank">
+    <view class="ranking">
+        <view class="f20 bold">碳足迹排行</view>
+        <view class="f14">个人绿色低碳排行榜</view>
+    </view>
+</navigator>
+<view class="list">
+    <view bind:tap="goToDeatils" class="item" data-item="{{item}}" wx:for="{{list}}" wx:key="index">
+        <text class="iconfont f18 bold iconjiantouarrow503"></text>
+        <view class="f20 bold">{{item.title}}</view>
+        <view class="f14">{{item.text}}</view>
+        <image src="{{item.icon}}" style="{{item.iconStyle}}"></image>
+    </view>
+</view>
+

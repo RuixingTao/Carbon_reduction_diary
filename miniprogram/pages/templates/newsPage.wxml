@@ -1,0 +1,12 @@
+<!--pages/templates/newsPage.wxml-->
+<template name="news">
+    <view class="todayItem " data-item="{{item}}" data-id="{{item.id}}" bindtap="tapToDetail" hover-class="navigator-hover"  style="background: #f6fcfb;border-radius: 32rpx;width: 724rpx; height: 276rpx; display: inline-block; box-sizing: border-box; left: 0rpx; top: -2rpx; position: relative">
+                <image src="{{item.imgUrl}}" style="border-radius: 32rpx;position: relative; left: -212rpx; top: 2rpx"></image>
+                <view class="right-content"  style="position: absolute; left: 3rpx; top: 140rpx; width: 724rpx; height: 228rpx; display: block; box-sizing: border-box">
+                    <rich-text style="text-align: left;">{{item.title}}</rich-text>
+                    <view style="text-align: left;">{{item. newsText}}</view>
+                    <view style="text-align: left; width: 396rpx; height: 34rpx; display: block; box-sizing: content-box">{{item.author}}</view>
+                    <view>{{item.publishDate}}</view>
+                </view>
+    </view>
+</template>

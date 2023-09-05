@@ -1,0 +1,34 @@
+<form catchsubmit="formSubmit">
+    <navBar background="rgba(255,255,255,0)" extClass="custom-nav-bar">
+        <view slot="left">
+            <navigator hoverClass="none" openType="navigateBack">
+                <image bind:tap="" class="left-icon" src="http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/back_btn%402x.png"></image>
+            </navigator>
+        </view>
+    </navBar>
+    <view class="head-title" wx:if="{{type==='FOOD'}}">
+        <image src="cloud://cloud1-9gvab8j9b272b0b8.636c-cloud1-9gvab8j9b272b0b8-1313324381/食物@2x.png"></image> *请填写您一日所消耗各类食物克数，并结合您所填数据计算碳排放，请按照实事填写哦~
+    </view>
+    <view class="head-title" wx:if="{{type==='TRAFFIC'}}">
+        <image src="http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/footmark/jiaotong/%E4%BA%A4%E9%80%9A%402x.png"></image> *请填写您一日所行驶的各类交通工具行驶公里数，并结合您所填数据计算碳排放，请按照实事填写哦~
+    </view>
+    <scroll-view scroll-y="true" class="list">
+        <view class="item" wx:for="{{list}}" wx:key="index">
+            <view class="type">
+                <image src="{{item.icon}}"></image>
+                <view class="f12">{{item.name}}</view>
+            </view>
+            <view class="input">
+                <input bindinput="bindInput" data-item="{{item}}" disabled="{{item.disabled}}" maxlength="6" name="{{item.code}}" placeholder="请输入" placeholderClass="bold" type="number" value="{{item.value}}"></input>
+                <view class="f16 bold" wx:if="{{type==='TRAFFIC'}}">km</view>
+                <view class="f16 bold" wx:if="{{type==='FOOD'&&item.code==='egg'}}">个</view>
+                <view class="f16 bold" wx:if="{{type==='FOOD'&&item.code==='milk'}}">ml</view>
+                <view class="f16 bold" wx:if="{{type==='FOOD'&&item.code!=='egg'&&item.code!=='milk'}}"> g </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="footer-btn f18" >
+        <button class="button" formType="reset">重置</button>
+        <button class="button" formType="submit">计算</button>
+    </view>
+</form>

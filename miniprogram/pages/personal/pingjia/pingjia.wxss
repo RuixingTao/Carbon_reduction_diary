@@ -1,0 +1,63 @@
+image {
+    width: 140rpx;
+    height: 140rpx;
+    margin-right: 5rpx;
+  }
+
+.head{
+    margin-top: 8%;
+    text-align: center;
+    display:grid
+    
+}
+.head .font0{
+    font-size:x-large;
+    font-weight: 800;
+}
+
+.head .fontF{
+    margin-top: 3%;
+    font-size:xx-large;
+    font-weight: 800;
+    color: #c42121;
+}
+
+.head .font1{
+    color: #a71c1c;
+    font-size:xxx-large;
+    font-weight: 800;
+}
+
+.star{
+    background-color: #c8eed9;
+    border-radius: 32rpx;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.critical{
+    margin-top: 6%;
+    text-align: center;
+    font-size:xx-large;
+    font-weight: 800;
+}
+
+.critical .biaoqing .image{
+    width: 35%;
+
+}
+
+.button{
+    margin: 50rpx 0;
+}
+
+.button .btn{
+    border-radius: 37rpx;
+    background-color: #c42121; color: #fff;
+    width: 70%;
+    height: 120rpx;
+    font-size: 60rpx;
+    text-align: center;
+}
+.button signed .btn{ background-color: rgba(153, 153, 153, 0.61); }

@@ -1,0 +1,111 @@
+page {
+  background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/page_head_bg%402x.png) no-repeat #f6f6fc;
+  background-size: 100%;
+}
+
+.head-title {
+  padding: 128rpx 0 0 52rpx;
+}
+
+.head-title .bold {
+  font-size: 52rpx;
+  margin-bottom: 16rpx;
+}
+
+.head-title .f12 {
+  opacity: .6;
+}
+
+.ranking {
+  background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/footmark/%E7%A2%B3%E8%B6%B3%E8%BF%B9%E6%8E%92%E8%A1%8C%402x.png) no-repeat;
+  background-size: 100%;
+  height: 280rpx;
+  margin: 37rpx auto 0;
+  width: 726rpx;
+}
+
+.ranking .bold {
+  padding: 88rpx 0 0 88rpx;
+}
+
+.ranking .f14 {
+  opacity: .6;
+  padding: 20rpx 0 0 88rpx;
+}
+
+.meeting {
+  background: #f6f6fc;
+  border-radius: 32rpx;
+  box-shadow: 24rpx 16rpx 24rpx 0 #ebebff,-24rpx -16rpx 24rpx 0 #fbfbff;
+  height: 200rpx;
+  margin: 0 auto 60rpx;
+  position: relative;
+  width: 630rpx;
+}
+
+.meeting::before {
+  background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/footmark/%E4%BC%9A%E8%AE%AE%E7%A2%B3%E4%B8%AD%E5%92%8C%402x.png) no-repeat;
+  background-size: 100%;
+  content: "";
+  display: block;
+  height: 172rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 18rpx;
+  width: 190rpx;
+}
+
+.meeting .f20 {
+  padding: 48rpx 0 0 40rpx;
+}
+
+.meeting .iconjiantouarrow503 {
+  color: #283e5f;
+  margin-left: 20px;
+  opacity: .6;
+}
+
+.meeting .f14 {
+  opacity: .6;
+  padding: 20rpx 0 0 40rpx;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 0 60rpx;
+}
+
+.list .item {
+  background: #f6f6fc;
+  border-radius: 32rpx;
+  box-shadow: 24rpx 16rpx 24rpx 0 #ebebff,-24rpx -16rpx 24rpx 0 #fbfbff;
+  height: 340rpx;
+  margin-bottom: 60rpx;
+  margin-right: 60rpx;
+  position: relative;
+  width: 280rpx;
+}
+
+.list .item .iconjiantouarrow503 {
+  color: #4e73aa;
+  opacity: .6;
+  position: absolute;
+  right: 43rpx;
+  top: 52rpx;
+}
+
+.list .item .f20 {
+  padding: 40rpx 0 10rpx 40rpx;
+}
+
+.list .item .f14 {
+  opacity: .6;
+  padding-left: 40rpx;
+}
+
+.list .item image {
+  bottom: 8rpx;
+  position: absolute;
+  right: 24rpx;
+}

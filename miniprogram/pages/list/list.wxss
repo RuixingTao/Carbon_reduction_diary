@@ -1,0 +1,295 @@
+/* pages/list/list.wxss */
+
+
+
+
+.box {
+  width: 100%;
+  /* margin: 20rpx auto; */
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+  /* padding-bottom: 30px; */
+}
+
+.tree {
+  width:100%;
+  height:50%;
+  /* background: url(../../../images/shu.png) no-repeat; */
+  position: relative;
+   bottom:20%;
+}
+.tree>.shumu{
+  width:470rpx;
+  height: 620rpx;
+  position: absolute;
+  bottom:72rpx;
+  z-index: 10;
+  left: 50%;
+  margin-left: -235rpx;
+}
+.tree>.zhongshu{
+  width:400rpx;
+  height: 550rpx;
+  position: absolute;
+  bottom:72rpx;
+  z-index: 10;
+  left: 50%;
+  margin-left: -200rpx;
+}
+.tree>.xiaoshu{
+  width: 250rpx;
+  height: 480rpx;  
+  position: absolute;
+  bottom:72rpx;
+  z-index: 10;
+  left: 50%;
+  margin-left: -95rpx;
+}
+.tree>.youshu{
+  width: 170rpx;
+  height: 180rpx;  
+  position: absolute;
+  bottom:60rpx;
+  z-index: 10;
+  left: 50%;
+  margin-left: -85rpx;
+}
+.bottle {
+  position: absolute;
+  bottom: 23%;
+  right: 150rpx;
+  width: 180rpx;
+  height: 130rpx;
+  transition: 1.8s;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.bottle image{
+  width: 100%;
+  height: 100%;
+}
+
+.rain_box {
+  position: absolute;
+  overflow: hidden;
+  top: 440rpx;
+  right:380rpx;
+}
+
+.rain_box .line {
+  width: 8rpx;
+  float: left;
+  position: relative;
+}
+
+.rain_box .line view {
+  margin-top: 4rpx;
+  height: 4rpx;
+  width: 4rpx;
+  background: #384;
+  border-radius: 6rpx;
+  opacity: 0
+}
+
+.rain_box .line1 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 30rpx;
+}
+
+.rain_box .line2 {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+  margin-left: 4rpx;
+}
+
+.rain_box .line3 {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+  margin-left: 6rpx;
+}
+
+#btn {
+  position: absolute;
+  top: 180rpx;
+  right: 20rpx;
+  height: 40rpx;
+  width: 100rpx;
+  background: #f60;
+  border: none;
+  color: #fff;
+}
+
+
+/* animation */
+
+    /* animation */
+    .a-swing{-webkit-animation:1s ease;-moz-animation:1s ease;-ms-animation:1s ease;animation:1s ease;}
+    .bottle-fadeIn{-webkit-animation:.8s ease;-moz-animation:.8s ease;-ms-animation:.8s ease;animation:.8s ease;}
+    .a-watering{-webkit-animation:0.9s ease 0 3;-moz-animation:0.9s ease  0 3;-ms-animation:0.9s ease  0 3;animation:0.9s ease  0 3;}
+    
+    /* 摇摆 */
+    .a-swing{animation:swing 1s ;}
+    .bottle-fadeIn{-webkit-animation-name:bottleFadeIn;-moz-animation-name:bottleFadeIn;-ms-animation-name:bottleFadeIn;animation-name:bottleFadeIn 4s ;}
+    .a-watering{-webkit-animation-name:watering;-moz-animation-name:watering;-ms-animation-name:watering;animation-name:watering;}
+    
+    /*水瓶动画*/
+    @keyframes bottleFadeIn{
+        0%{opacity:0;bottom:340rpx;right:0;-webkit-transform:rotate(0deg);}
+        100%{opacity:1;bottom:23%;right:150rpx;-webkit-transform:rotate(-45deg);}
+   
+        
+    }
+    /*流水动画*/
+    @keyframes watering{
+        0%{opacity:0;}
+        100%{opacity:1;height:8rpx;}
+    }
+
+    /* 摇摆 */
+    @keyframes swing{
+        0%{-webkit-transform:scale(1);}
+        25%{-webkit-transform:scale(1.1);}
+        50%{-webkit-transform:scale(1);}
+        75%{-webkit-transform:scale(1.1);}
+        100%{-webkit-transform:scale(1);}
+
+    }
+/*    
+    @keyframes swing{
+        20%{transform:rotate(15deg);}
+        40%{transform:rotate(-10deg);}
+        60%{transform:rotate(5deg);}
+        80%{transform:rotate(-5deg);}
+        100%{transform:rotate(0);}
+    } */
+
+
+    .van-progress__portion{
+      background:-webkit-repeating-linear-gradient(-45deg,orange 0px,orange 5px,rgb(255,231,156) 8px,rgb(255,231,156) 16px)!important;
+      border-radius: 120rpx!important;
+
+    }
+    .van-progress__pivot{
+      right: -60rpx!important;
+    }
+    .progress_box{
+      width: 80%;
+      position: relative;
+      margin:200rpx auto 0;
+      left: 50%;
+      height: 65rpx;
+      margin-left: -40%;
+    }
+    .van-progress{
+      background: transparent!important;
+      z-index: 10;
+      height: 36rpx!important;
+      left: 13rpx!important;
+       top: 6rpx!important;
+
+    }
+    .van-progress__pivot{
+      background: transparent!important;
+    }
+    .tree_bg{
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      z-index: -1;
+
+    }
+    .return{
+      position:absolute;
+      z-index:99;
+      top:110rpx;
+      left:30rpx;
+    }
+    .bot_s{
+      padding:0 56rpx;
+      position: absolute;
+      bottom:10rpx;
+      width: 700rpx;
+      height: 226rpx;
+    }
+    .left_tab{
+        width: 430rpx;
+    }
+
+    .left_tab image{
+       width: 98rpx;
+       height: 124rpx;
+       margin-right: 42rpx;
+       margin-top: 10rpx;
+    }
+    .left_tab image:last-child{
+      margin-right: 53rpx;
+    }
+    .imgs_box{
+      width:214rpx;
+      height: 226rpx;
+      position: absolute;
+    }
+    .imgs_box .shuipan{
+       width: 100%;
+       height: 100%;
+       position: absolute;
+    }
+    .imgs_box .shuihu{
+      position: absolute;
+      width:194rpx;
+      height:138rpx;
+   }
+   .imgs_box .text{
+     color: #fff;
+     width: 80rpx;
+     font-weight: bold;
+     text-align: center;
+     position: absolute;
+
+     left: 50%;
+     margin-left: -40rpx;
+   }
+   .shupan{
+     /* padding:; */
+     width: 430rpx;
+     height: 150rpx;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -225rpx;
+   }
+   .water{
+     width: 22rpx;
+     height: 33rpx;
+     position: absolute;
+     z-index: 99;
+     bottom: 0;
+     left: 50%;
+     transform: rotateZ(45deg);
+     margin-left: 1rpx;
+    margin-bottom: 75rpx;
+   }
+   .jindt{
+     width: 105%;
+     height: 100%;
+     position: absolute;
+     bottom: 9rpx;
+   }
+   .van-progress__portion{
+     transition: .4s!important;
+   }

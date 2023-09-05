@@ -1,0 +1,6 @@
+<view class="default-page">
+    <view class="default-main">
+        <view class="icon"></view>
+        <view class="text f14">{{text}}</view>
+    </view>
+</view>

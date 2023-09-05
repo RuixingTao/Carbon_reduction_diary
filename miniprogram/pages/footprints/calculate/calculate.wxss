@@ -1,0 +1,113 @@
+page {
+    background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/page_head_bg%402x.png) no-repeat #f6f6fc;
+    background-size: 100%;
+    padding-bottom: calc(var(--safe-bottom) + 130rpx);
+}
+
+.head-title {
+    margin: 0 auto;
+    position: relative;
+    width: 638rpx;
+}
+
+.head-title .f14 {
+    left: 20rpx;
+    position: absolute;
+    top: 30rpx;
+}
+
+.head-title image {
+    display: block;
+    height: 292rpx;
+    width: 638rpx;
+}
+
+.content {
+    background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/%E8%AE%A1%E7%AE%97%E7%BB%93%E6%9E%9C%E5%8D%A1%E7%89%87%402x.png) no-repeat;
+    background-size: 100%;
+    height: 606rpx;
+    margin: -40rpx auto 0;
+    position: relative;
+    width: 726rpx;
+}
+
+.content .num {
+    color: #fff;
+    font-size: 48rpx;
+    left: 50rpx;
+    top: 100rpx;
+    width: 400rpx;
+}
+
+.content .f16,.content .num {
+    position: absolute;
+    text-align: center;
+}
+
+.content .f16 {
+    top: 300rpx;
+    width: 726rpx;
+}
+
+.content .f16 text {
+    color: #ff7e00;
+}
+
+.content .f14 {
+    bottom: 70rpx;
+    color: #96a9c7;
+    position: absolute;
+    text-align: center;
+    width: 726rpx;
+}
+
+.footer-btn {
+    align-items: center;
+    bottom: calc(var(--safe-bottom) + 30rpx);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60rpx;
+    position: fixed;
+    width: 398rpx;
+    z-index: 10;
+}
+
+.footer-btn .button {
+    background: #029767;
+    border: none;
+    border-radius: 24rpx;
+    color: #fff;
+    line-height: 90rpx;
+    text-align: center;
+    width: 398rpx;
+}
+
+.footer-btn navigator .button {
+    background: #e2f0f9;
+    color: #8ea2af;
+    width: 200rpx;
+}
+
+.layer {
+    padding: 80rpx 52rpx;
+    width: 644rpx;
+}
+
+.layer .f24 {
+    margin-bottom: 48rpx;
+}
+
+.layer .f14 {
+    line-height: 52rpx;
+    opacity: .6;
+}
+
+.layer .button {
+    background: #029767;
+    border-radius: 24rpx;
+    color: #fff;
+    line-height: 90rpx;
+    margin: 80rpx auto 0;
+    text-align: center;
+    width: 398rpx;
+}

@@ -1,0 +1,67 @@
+<wxs module="numberUtil" src="../../utils/util.wxs"></wxs>
+<view>
+    <view class="head-info">
+        <view class="user">
+            <view class="avatar" wx:if="{{userInfo.user_avatarUrl}}">
+                <van-image fit="widthFix" height="132rpx" radius="132rpx" src="{{userInfo.user_avatarUrl}}" width="132rpx"></van-image>
+            </view>
+            <view bind:tap="goToLogin" class="avatar" wx:else>
+                <van-image fit="widthFix" height="132rpx" radius="132rpx" width="132rpx"></van-image>
+            </view>
+            <view class="info">
+                <view class="user-name f18 bold" wx:if="{{userInfo.user_avatarUrl}}">{{userInfo.user_name}}</view>
+                <view bind:tap="goToLogin" class="user-name f18" wx:if="{{!userInfo.user_avatarUrl}}"> 登录/注册 </view>
+            </view>
+            <view class="app">
+                <van-image fit="widthFix" height="100rpx" radius="100rpx" width="100rpx" bind:tap="goToAppraise" class="user-name f18 bold" src="/images/icon/pingjia.png" wx:if="{{userInfo.user_avatarUrl}}"></van-image>
+                <text style="font-weight: 800;color: rgb(24, 196, 61);width: 129rpx; height: 44rpx; display: block; box-sizing: border-box" wx:if="{{userInfo.user_avatarUrl}}">评价一下</text>
+            </view>
+            
+        </view>
+    </view>
+    
+    <view class="count">
+        <view class="count-item">
+            <view class="count-data">
+                <text>{{signNum}}</text>天</view>
+            <view class="count-title">践行低碳</view>
+        </view>
+        <view  class="count-item" data-event-opts="{{[ [ 'tap',[ [ 'toMyAchi',['$event'] ] ] ] ]}}">
+            <view class="count-data">
+                <text>{{carbonInt}}</text>
+            </view>
+            <view class="count-title">当前碳积分</view>
+        </view>
+        <view class="count-item" data-event-opts="{{[ [ 'tap',[ [ 'toEmisReduction',['$event'] ] ] ] ]}}">
+            <view class="count-data">
+                <text>{{numberUtil.numberFormat(totalRed)}}</text></view>
+            <view class="count-title">累计减碳量(kg)</view>
+        </view>
+    </view>
+    <view class="tab-box">
+      <view class="tab-head" >
+          <view class="{{['tab-name','active']}}" data-event-opts="{{[ [ 'tap',[ [ 'toggle',[0] ] ] ] ]}}">
+              <text>减碳成就</text>
+          </view>
+      </view>
+      <scroll-view scroll-y="true" style="height: 800rpx; width: 750rpx; display: block; box-sizing: border-box" class="tab-main">
+          <view class="tab-item" >
+              <view class="medal-box">
+                  <view class="medal-main">
+                      <view  class="{{['medal-item',index>grade?'grey':'']}}"wx:for="{{medal}}" wx:key="index">
+                          <view class="medal-grade">
+                              <image src="{{item.image}}"></image>
+                          </view>
+                          <view class="medal-tip">
+                              <text>{{'累计碳积分\n满'+item.integral+'分'}}</text>
+                          </view>
+                      </view>
+                  </view>
+              </view>
+          </view>
+      </scroll-view>
+    </view>
+</view>
+<navigator hoverClass="none" url="/pages/contact/index">
+    <view class="contact_icon"></view>
+</navigator>

@@ -1,0 +1,200 @@
+page {
+  background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/page_head_bg%402x.png) no-repeat #f6f6fc;
+  background-size: 100%;
+}
+
+.title {
+  display: block;
+  height: 186rpx;
+  margin: 30rpx auto 0;
+  width: 626rpx;
+}
+
+.list {
+  margin: 0 auto;
+  position: relative;
+  width: 726rpx;
+}
+
+.list .cneter {
+  background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/box_center%402x.png) repeat-y;
+  background-size: 100%;
+  margin-top: -100rpx;
+  padding: 0 88rpx;
+}
+
+.list::before {
+  background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/box_head%402x.png) no-repeat;
+  background-size: 100%;
+}
+
+.list::after,.list::before {
+  content: "";
+  display: block;
+  height: 200rpx;
+  width: 726rpx;
+}
+
+.list::after {
+  background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/box_footer%402x.png) no-repeat;
+  background-size: 100%;
+  margin-top: -100rpx;
+}
+
+.list .head {
+  align-items: center;
+  display: flex;
+  position: relative;
+  top: -20rpx;
+}
+
+.list .head view:nth-child(1) {
+  text-align: center;
+  width: 50rpx;
+}
+
+.list .head view:nth-child(2) {
+  flex: 1;
+  padding-left: 30rpx;
+  text-align: left;
+}
+
+.list .head view:nth-child(3) {
+  text-align: center;
+  width: 160rpx;
+}
+
+.list .item {
+  align-items: center;
+  display: flex;
+  padding: 20rpx 0;
+}
+
+.list .item .index {
+  text-align: center;
+  width: 60rpx;
+}
+
+.list .item .index image {
+  height: 56rpx;
+  width: 56rpx;
+}
+
+.list .item .info {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  padding-left: 30rpx;
+  text-align: left;
+}
+
+.list .item .info2 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    padding-left: 30rpx;
+    text-align: left;
+  }
+
+.list .item .info image {
+  background: #eee;
+  border-radius: 60rpx;
+  height: 60rpx;
+  margin-right: 10rpx;
+  width: 60rpx;
+}
+
+.list .item .ccer {
+  text-align: center;
+  width: 130rpx;
+}
+
+.custom-nav-bar .left-icon {
+  height: 68rpx;
+  margin: 20rpx 0 0 30rpx;
+  width: 68rpx;
+  z-index: 1;
+}
+
+/* 我的排名 */
+.my {
+    margin: 0 auto;
+    position: relative;
+    width: 700rpx;
+    height: 300rpx;
+  }
+  
+  .my .cneter {
+    background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/box_center%402x.png) repeat-y;
+    background-size: 100%;
+    margin-top: -100rpx;
+    padding: 0 88rpx;
+  }
+  
+  .my::before {
+    background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/box_head%402x.png) no-repeat;
+    background-size: 100%;
+  }
+  
+  .my::after,.list::before {
+    content: "";
+    display: block;
+    height: 200rpx;
+    width: 726rpx;
+  }
+  
+  .my::after {
+    background-size: 100%;
+    margin-top: -100rpx;
+  }
+  
+  .my .head {
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 10rpx;
+    font-size: x-large;
+    font-weight: 900;
+  }
+  
+  .my .head view{
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  .my .item {
+    align-items: center;
+    display: flex;
+    padding: 50rpx 0;
+  }
+  
+  .my .item .index {
+    text-align: center;
+    width: 300rpx;
+    font-weight: 900;
+    font-size: xx-large;
+  }
+  
+  .my .item .index image {
+    height: 56rpx;
+    width: 56rpx;
+  }
+  
+  .my .item .info {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    padding-left: 90rpx;
+    text-align: left;
+  }
+  
+  .my .item .info image {
+    background: #eee;
+    border-radius: 60rpx;
+    height: 100rpx;
+    margin-right: 80rpx;
+    width: 100rpx;
+  }

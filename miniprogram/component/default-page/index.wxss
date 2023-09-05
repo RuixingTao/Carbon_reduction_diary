@@ -1,0 +1,22 @@
+.default-page {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.default-page .default-main {
+    margin-top: 25%;
+    text-align: center;
+}
+
+.default-page .default-main .icon {
+    background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/%E7%A9%BA%E7%8A%B6%E6%80%81%402x.png) no-repeat;
+    background-size: 100%;
+    height: 234rpx;
+    width: 272rpx;
+}
+
+.default-page .default-main .text {
+    margin-top: 60rpx;
+}

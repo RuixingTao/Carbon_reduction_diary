@@ -1,0 +1,13 @@
+{
+   "usingComponents": {
+        "navBar": "/component/navBar/navBar"
+   },
+      
+    "navigationStyle": "custom",
+    "backgroundColor": "#F6F6FC",
+    "navigationBarBackgroundColor": "#98d361",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "首页",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+}

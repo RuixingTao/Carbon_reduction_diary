@@ -1,0 +1,225 @@
+page {
+    background: url(http://ct-tph.oss-cn-hangzhou.aliyuncs.com/tanzuji/page_head_bg%402x.png) no-repeat #f6f6fc;
+    background-size: 100%;
+}
+
+/*首页图*/
+
+.swiper{
+    padding: 150rpx 0 0 0rpx;
+}
+
+.home .img image {
+  border-radius: 32rpx;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.slide {
+  margin-top: 22rpx;
+  background: #fff;
+  padding: 0 36rpx;
+}
+
+.hot-view .title {
+  padding: 28rpx 0 35rpx 10rpx;
+}
+
+.hot-view .title text:first-child {
+  font-size: 30rpx;
+  font-weight: bolder;
+  color: #7f7469;
+  padding-right: 20rpx;
+}
+
+.hot-view .title text:last-child {
+  font-size: 22rpx;
+  font-weight: bold;
+  color: #bbb4af;
+  border-left: 1px solid #bbb4af;
+  padding-left: 20rpx;
+}
+
+
+
+.hot-view .tag {
+  display: flex;
+  padding: 34rpx 0 24rpx;
+  justify-content: space-between;
+}
+
+.hot-view .tag text {
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 36rpx;
+  border: 1px solid #eee5da;
+  border-radius: 10rpx;
+  font-size: 22rpx;
+  color: #bbb4af;
+}
+
+.hot-view {
+  border-radius: 32rpx;
+  margin-top: 20rpx;
+  background: #fff;
+}
+
+.hot-view .tab {
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-bottom: 1px solid #edeadd;
+  margin-bottom: 20rpx;
+}
+
+.hot-view .tab view {
+  flex: 1 1 auto;
+  text-align: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.hot-view .tab text {
+  width: 172rpx;
+  height: 100%;
+  font-weight: bold;
+  color: #666;
+  font-size: 26rpx;
+}
+
+.hot-view .tab .active {
+  color: #98d361;
+  border-bottom: 3px solid #81b352;
+  box-sizing: border-box;
+}
+
+.fill {
+  height: 26rpx;
+  width: 100%;
+  background: #fff;
+}
+/*动画*/
+.animationData{
+  opacity: 0;
+}
+/*资讯推荐区域*/
+.todayList{
+  width:722rpx;
+  box-sizing: border-box;
+  /* padding-right:-14rpx; */
+
+  
+}
+
+.todayList .item{
+  background: #f6fcfb;
+  border-radius: 32rpx;
+  box-shadow: 24rpx 16rpx 24rpx 0 #ebebff,-24rpx -16rpx 24rpx 0 #fbfbff;
+  height: 320rpx;
+  margin-bottom: 60rpx;
+  margin-right: 60rpx;
+  position: relative;
+  width: 720rpx;
+}
+
+.todayList:after{
+  content: "";
+  display: block;
+  clear:both;
+}
+
+
+.todayItem:after{
+  content: "";
+  display: block;
+  clear:both;
+}
+.todayItem{
+  width:346rpx;
+  height:auto;
+  padding:14rpx;
+  padding-bottom:0;
+  margin-bottom:15rpx;
+  box-sizing: border-box;
+  text-align: center;
+  background:#fff;
+   /* float:left;  */
+   display: inline-block;
+   margin-right:14rpx; 
+}
+.todayItem image{
+  width:317rpx;
+  height:292rpx;
+}
+.todayItem text{
+    width:100%;
+    height:60rpx;
+    line-height: 60rpx;
+    text-align: center;
+}
+
+.loadMore{
+  width:100%;
+  text-align: center;
+}
+
+/***收藏列表、搜索列表***/
+.todayList{
+    width:100%;
+  }
+  .todayList::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .todayItem{
+    width:100%;
+    height:240rpx;
+    padding:24rpx;
+     /* background:#F3EBDF;  */
+     background:rgba(238, 238, 238, 0.8);
+     /* border-bottom:1px solid #c3c3c3; */
+    position: relative;
+    box-sizing: border-box;
+     margin-bottom:20rpx;
+  }
+  .todayItem image{
+    width:250rpx;
+    height:100%;
+  }
+  .right-content view{
+      font-size:10pt;
+      margin-top:17rpx;
+  }
+  .right-content view:last-child{
+      color:#C3C3C3;
+  }
+  .right-content text{
+      font-size:10pt;
+      margin-top:17rpx;
+      color:#C3C3C3;
+  }
+  .right-content{
+    width:100%;
+    height:190rpx;
+    padding-left:298rpx;
+    padding-right:30rpx;
+    box-sizing: border-box;
+    position: absolute;
+    left:0;
+    top:50%;
+    transform: translate(0,-50%);
+  }
+  .right-content view{
+    width:100%;
+     word-break: break-all;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+       overflow: hidden;
+      -webkit-box-orient: vertical;
+  }
+

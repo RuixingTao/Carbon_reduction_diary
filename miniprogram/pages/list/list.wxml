@@ -1,0 +1,80 @@
+<!--pages/list/list.wxml-->
+<view class="return" bindtap="before">
+	<van-icon name="arrow-left" size="22px" color="#fff" />
+	
+</view>
+
+<view class="box">
+    <image mode="aspectFill" class="tree_bg" src="../../images/tree_bg.png"> </image>
+        <view class="progress_box">
+        </view>
+        <view wx:if="{{waternum>=0 && waternum<100}}" style="font-size: large;font-weight:700;color:rgb(81, 93, 255);margin-top:100rpx;text-align:center">再浇水{{remain1}}g水滴，小树将茁壮成长为小树苗～</view>
+        <view wx:if="{{waternum>=100 && waternum<400}}" style="font-size: large;font-weight:700;color:rgb(81, 93, 255);margin-top:100rpx;text-align:center">再浇水{{remain2}}g水滴，小树苗将茁壮成长为小树～</view>
+        <view wx:if="{{waternum>=400 && waternum<1600}}" style="font-size: large;font-weight: 700;color:rgb(81, 93, 255);margin-top:100rpx;text-align:center">再浇水{{remain3}}g水滴，小树将茁壮成长为茂盛大树～</view>
+        <!-- 树 -->
+        <view bindanimationend="treeend" class="tree {{shutree?'a-swing':''}}" style="position: absolute; left: 1rpx; top: 457rpx">
+        <!-- 大树 -->
+            <image wx:if="{{waternum==1600}}" class="shumu" mode="aspectFill" src="../../../images/shu.png"></image>
+            
+    
+        <image wx:if="{{waternum>=400 && waternum<1600}}" class="zhongshu" mode="aspectFill" src="/images/xiaoshu@1x.png"></image>
+
+        <image wx:if="{{waternum>=100 && waternum<400}}" class="xiaoshu" mode="aspectFill" src="/images/xiaoshumiao@1x.png"></image>
+
+        <image wx:if="{{waternum>=0 && waternum<100}}" class="youshu" mode="aspectFill" src="/images/xiaoshuya@1x.png"></image>
+        
+            <image mode="aspectFill" class="shupan" src="/images/shupan.png"></image>
+            <image wx:if="{{waterbool}}" class="water" src="/images/water.png"></image>
+        </view>
+        <!-- /树 -->
+        <!-- 水瓶 -->
+        <view style="opacity:{{bottle?'1':'0'}}" bindanimationstart="bottlestart" bindanimationend="bottleend" class="bottle {{tree?'bottle-fadeIn':''}}  ">
+            <image mode="aspectFill" src="../../../images/shashui.png"></image>
+
+        </view>
+        <!--/水瓶-->
+        <!-- 雨水 -->
+        <view class="rain_box">
+            <view class="line line1">
+                <view></view>
+                <view></view>
+                <view></view>
+                <view></view>
+                <view></view>
+            </view>
+            <view class="line line2">
+                <view></view>
+                <view></view>
+                <view></view>
+                <view></view>
+                <view></view>
+            </view>
+            <view class="line line3">
+                <view></view>
+                <view></view>
+                <view></view>
+                <view></view>
+                <view></view>
+            </view>
+        </view>
+        <!-- 选项 -->
+        <view class="flex-between bot_s" >
+            <view class="left_tab flex-around" style="position: relative; left: -15rpx; top: 42rpx">
+                <image bindtap="answer" mode="aspectFill" src="/images/dt.png" data-testId="点击开始答题"></image>
+                <image bindtap="tosign" mode="aspectFill" src="/images/qd.png"></image>
+ 
+            </view>
+            <view  style="position: relative; left: 446rpx; top: 0rpx; width: 216rpx; height: 225rpx; display: block; box-sizing: border-box">
+                <view class="imgs_box" bindtap="animation" style="position: absolute; left: 6rpx; top: -135rpx">
+                    <image mode="aspectFill" class="shuipan" src="/images/shuipan.png" style="position: absolute; left: 0rpx; top: 0rpx"></image>
+                    <image mode="aspectFill" class="shuihu" src="/images/shashui.png" style="position: absolute; left: 0rpx; top: 19rpx"></image>
+                    <view class="text"  style="position: absolute; left: 107rpx; top: 156rpx">{{water}}g</view>
+                </view>
+            </view>
+        </view>
+        <!-- /雨水 -->
+        <!-- <view type="button" id="btn" bindtap="animation">浇水</view> -->
+    
+</view>
+
+
